@@ -1,0 +1,248 @@
+<!-- ==================== ABOUT ME SECTION ==================== -->
+<section class="about-section">
+    <div class="about-container">
+        
+        <!-- Left Side - Photo -->
+        <div class="about-image">
+            <div class="image-wrapper">
+                <img src="../Picha/favicon.png" alt="Wena & Designer" class="profile-photo">
+                <div class="photo-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Right Side - Content -->
+        <div class="about-content">
+            <h2 class="section-title">Kuhusu Mimi</h2>
+            
+            <h1 class="main-heading">
+                Habari, Mimi ni <span class="highlight">6wery.</span>
+            </h1>
+            
+            <p class="intro-text">
+              Mtengenezaji mkubwa wa picha mbao na zile picha zenye vioo natengeneza
+            </p>
+            
+            <div class="bio-text">
+                <p>Mimi ni fundi na mbunifu wa picha za mbao za kisasa maalum kwa ajili ya kupamba na kurembesha nyumba. Kazi yangu ni kubadilisha kuta zako kuwa sehemu ya kuvutia na yenye muonekano wa kifahari kupitia sanaa ya kipekee ya mbao. Zaidi ya ubunifu wangu, nguzo kuu ya kazi yangu ni uaminifu na umakini wa hali ya juu—ninahakikisha unapata bidhaa bora kabisa kwa wakati na kwa makubaliano yaleyale tunayoweka.</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://wa.me/255629830942" target="_blank" class="social-btn whatsapp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    WhatsApp
+                </a>
+                <a href="https://instagram.com/6wery_" target="_blank" class="social-btn instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    Instagram
+                </a>
+                <a href="https://tiktok.com/@6wery" target="_blank" class="social-btn tiktok">
+                    <img src="Picha/tiktok-svgrepo-com.svg" alt="TikTok">
+                    TikTok
+                </a>
+            </div>
+
+            <button class="cta-contact">
+                <a href="https://wa.me/255629830942" style="color:white; text-decoration:none;">Wasiliana Nasi Sasa</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+/* ABOUT SECTION STYLES */
+.about-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0000 100%);
+    border-bottom: 8px solid #e50914;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Photo Animation */
+.about-image {
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(229, 9, 20, 0.3);
+    transition: all 0.6s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 30px 60px rgba(229, 9, 20, 0.5);
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 20px;
+    border: 6px solid #e50914;
+    transition: all 0.8s ease;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(229, 9, 20, 0.2));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image-wrapper:hover .photo-overlay {
+    opacity: 1;
+}
+
+/* Text Content */
+.section-title {
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.3s;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.6s;
+}
+
+.highlight {
+    color: #e50914;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #e50914;
+    border-radius: 2px;
+}
+
+.intro-text {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.9s;
+}
+
+.bio-text p {
+    color: #b3b3b3;
+    line-height: 1.7;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 1.2s;
+}
+
+/* Social Buttons */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 35px 0;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 1.5s;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: 1px solid #333;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    background: #e50914;
+    color: white;
+    border-color: #e50914;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.cta-contact {
+    padding: 16px 40px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 1.8s;
+}
+
+.cta-contact:hover {
+    background: #b80710;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .main-heading {
+        font-size: 2.4rem;
+        color: #ffffff;
+    }
+    
+    .profile-photo {
+        max-width: 280px;
+    }
+}
+</style>
